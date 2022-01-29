@@ -53,7 +53,7 @@ struct CCValidators {
     
     private static func passwordRegex(_ password: String, regex: String) -> Bool {
         let passwordRegex = regex
-            return NSPredicate(format: "SELF MATCHES %@", passwordRegex).evaluate(with: password)
+        return NSPredicate(format: "SELF MATCHES %@", passwordRegex).evaluate(with: password)
     }
     
 }

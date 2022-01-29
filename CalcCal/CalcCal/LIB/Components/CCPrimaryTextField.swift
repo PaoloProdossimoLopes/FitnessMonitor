@@ -47,16 +47,15 @@ final class CCPrimaryTextField: CCPrimaryTextFieldProtocol {
         let tf = UITextField()
         tf.textColor = .black
         tf.placeholder = "Placeholder ..."
-        tf.attributedPlaceholder = .init(
-            string: tf.placeholder ?? "",
-            attributes: [.foregroundColor: UIColor.lightGray]
-        )
+        tf.setPlaceholderColor(.lightGray)
+        tf.autocapitalizationType = .none
+        tf.autocorrectionType = .no
         tf.delegate = self
         tf.translatesAutoresizingMaskIntoConstraints = false
         return tf
     }()
     
-    private lazy var validationMessageLabel: UILabel = {
+    private(set) lazy var validationMessageLabel: UILabel = {
         let label = UILabel()
         label.text = invalidMessage
         label.font = .systemFont(ofSize: 12, weight: .thin)
@@ -86,7 +85,7 @@ final class CCPrimaryTextField: CCPrimaryTextFieldProtocol {
         _ delegate: CCPrimaryTextFieldDelegate,
         image: String,
         placeholder: String,
-        customInvalidMessage: String = "* this fild is invalid! *",
+        customInvalidMessage: String = "❗️Esse campo contem informaçoes invalidas",
         isSecure: Bool = false,
         changesIsAnimate: Bool = true,
         validation: @escaping ((String) -> Bool) = { (_) -> Bool in  return true }

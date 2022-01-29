@@ -18,7 +18,25 @@
 		B112C86327A4E4A000DA2B2B /* CCValidators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C86227A4E4A000DA2B2B /* CCValidators.swift */; };
 		B112C86527A4E4FA00DA2B2B /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C86427A4E4FA00DA2B2B /* String+Extensions.swift */; };
 		B112C86727A4F3D900DA2B2B /* CCPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C86627A4F3D900DA2B2B /* CCPrimaryButton.swift */; };
+		B112C87827A5058600DA2B2B /* UITextField+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C87727A5058600DA2B2B /* UITextField+ExtensionsTests.swift */; };
+		B112C87A27A566A600DA2B2B /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C87927A566A600DA2B2B /* StringExtensionsTests.swift */; };
+		B112C87D27A567F800DA2B2B /* CCValidatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C87C27A567F800DA2B2B /* CCValidatorsTests.swift */; };
+		B112C88027A5736200DA2B2B /* CCPrimaryTextFieldTets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C87F27A5736200DA2B2B /* CCPrimaryTextFieldTets.swift */; };
+		B112C88327A581A200DA2B2B /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C88227A581A200DA2B2B /* XCTestCase+Extensions.swift */; };
+		B112C88527A597EC00DA2B2B /* CCPrimaryButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C88427A597EC00DA2B2B /* CCPrimaryButtonTests.swift */; };
+		B112C88A27A5A02600DA2B2B /* CCSignInViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C88927A5A02600DA2B2B /* CCSignInViewControllerTest.swift */; };
+		B112C88C27A5A1B500DA2B2B /* CCSignInUIComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C88B27A5A1B400DA2B2B /* CCSignInUIComponents.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B112C87027A5053100DA2B2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B112C82B27A4589E00DA2B2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B112C83227A4589E00DA2B2B;
+			remoteInfo = CalcCal;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B112C83327A4589E00DA2B2B /* CalcCal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalcCal.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,10 +52,26 @@
 		B112C86227A4E4A000DA2B2B /* CCValidators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCValidators.swift; sourceTree = "<group>"; };
 		B112C86427A4E4FA00DA2B2B /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		B112C86627A4F3D900DA2B2B /* CCPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCPrimaryButton.swift; sourceTree = "<group>"; };
+		B112C86C27A5053100DA2B2B /* FitnessMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitnessMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B112C87727A5058600DA2B2B /* UITextField+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+ExtensionsTests.swift"; sourceTree = "<group>"; };
+		B112C87927A566A600DA2B2B /* StringExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsTests.swift; sourceTree = "<group>"; };
+		B112C87C27A567F800DA2B2B /* CCValidatorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCValidatorsTests.swift; sourceTree = "<group>"; };
+		B112C87F27A5736200DA2B2B /* CCPrimaryTextFieldTets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCPrimaryTextFieldTets.swift; sourceTree = "<group>"; };
+		B112C88227A581A200DA2B2B /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
+		B112C88427A597EC00DA2B2B /* CCPrimaryButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCPrimaryButtonTests.swift; sourceTree = "<group>"; };
+		B112C88927A5A02600DA2B2B /* CCSignInViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCSignInViewControllerTest.swift; sourceTree = "<group>"; };
+		B112C88B27A5A1B400DA2B2B /* CCSignInUIComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCSignInUIComponents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B112C83027A4589E00DA2B2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B112C86927A5053100DA2B2B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -51,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				B112C83527A4589E00DA2B2B /* CalcCal */,
+				B112C86D27A5053100DA2B2B /* FitnessMonitorTests */,
 				B112C83427A4589E00DA2B2B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				B112C83327A4589E00DA2B2B /* CalcCal.app */,
+				B112C86C27A5053100DA2B2B /* FitnessMonitorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				B112C85827A4C6F300DA2B2B /* CCSignInViewController.swift */,
+				B112C88B27A5A1B400DA2B2B /* CCSignInUIComponents.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -154,6 +191,84 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		B112C86D27A5053100DA2B2B /* FitnessMonitorTests */ = {
+			isa = PBXGroup;
+			children = (
+				B112C88627A59FFB00DA2B2B /* Scenes */,
+				B112C88127A5818700DA2B2B /* TestHelpers */,
+				B112C87527A5054000DA2B2B /* LIB */,
+			);
+			path = FitnessMonitorTests;
+			sourceTree = "<group>";
+		};
+		B112C87527A5054000DA2B2B /* LIB */ = {
+			isa = PBXGroup;
+			children = (
+				B112C87E27A5735000DA2B2B /* Components */,
+				B112C87B27A567EB00DA2B2B /* Utils */,
+				B112C87627A5056E00DA2B2B /* Extensions */,
+			);
+			path = LIB;
+			sourceTree = "<group>";
+		};
+		B112C87627A5056E00DA2B2B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B112C87727A5058600DA2B2B /* UITextField+ExtensionsTests.swift */,
+				B112C87927A566A600DA2B2B /* StringExtensionsTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B112C87B27A567EB00DA2B2B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B112C87C27A567F800DA2B2B /* CCValidatorsTests.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B112C87E27A5735000DA2B2B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B112C87F27A5736200DA2B2B /* CCPrimaryTextFieldTets.swift */,
+				B112C88427A597EC00DA2B2B /* CCPrimaryButtonTests.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B112C88127A5818700DA2B2B /* TestHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				B112C88227A581A200DA2B2B /* XCTestCase+Extensions.swift */,
+			);
+			path = TestHelpers;
+			sourceTree = "<group>";
+		};
+		B112C88627A59FFB00DA2B2B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B112C88727A5A00000DA2B2B /* Authentication */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B112C88727A5A00000DA2B2B /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				B112C88827A5A00500DA2B2B /* SignIn */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		B112C88827A5A00500DA2B2B /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				B112C88927A5A02600DA2B2B /* CCSignInViewControllerTest.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -174,6 +289,24 @@
 			productReference = B112C83327A4589E00DA2B2B /* CalcCal.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B112C86B27A5053100DA2B2B /* FitnessMonitorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B112C87427A5053100DA2B2B /* Build configuration list for PBXNativeTarget "FitnessMonitorTests" */;
+			buildPhases = (
+				B112C86827A5053100DA2B2B /* Sources */,
+				B112C86927A5053100DA2B2B /* Frameworks */,
+				B112C86A27A5053100DA2B2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B112C87127A5053100DA2B2B /* PBXTargetDependency */,
+			);
+			name = FitnessMonitorTests;
+			productName = FitnessMonitorTests;
+			productReference = B112C86C27A5053100DA2B2B /* FitnessMonitorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -186,6 +319,10 @@
 				TargetAttributes = {
 					B112C83227A4589E00DA2B2B = {
 						CreatedOnToolsVersion = 13.1;
+					};
+					B112C86B27A5053100DA2B2B = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = B112C83227A4589E00DA2B2B;
 					};
 				};
 			};
@@ -203,6 +340,7 @@
 			projectRoot = "";
 			targets = (
 				B112C83227A4589E00DA2B2B /* CalcCal */,
+				B112C86B27A5053100DA2B2B /* FitnessMonitorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -217,6 +355,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B112C86A27A5053100DA2B2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -225,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B112C85927A4C6F300DA2B2B /* CCSignInViewController.swift in Sources */,
+				B112C88C27A5A1B500DA2B2B /* CCSignInUIComponents.swift in Sources */,
 				B112C86327A4E4A000DA2B2B /* CCValidators.swift in Sources */,
 				B112C83727A4589E00DA2B2B /* AppDelegate.swift in Sources */,
 				B112C85D27A4CF2E00DA2B2B /* CCPrimaryTextField.swift in Sources */,
@@ -236,7 +382,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B112C86827A5053100DA2B2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B112C88527A597EC00DA2B2B /* CCPrimaryButtonTests.swift in Sources */,
+				B112C87D27A567F800DA2B2B /* CCValidatorsTests.swift in Sources */,
+				B112C87A27A566A600DA2B2B /* StringExtensionsTests.swift in Sources */,
+				B112C88327A581A200DA2B2B /* XCTestCase+Extensions.swift in Sources */,
+				B112C88027A5736200DA2B2B /* CCPrimaryTextFieldTets.swift in Sources */,
+				B112C87827A5058600DA2B2B /* UITextField+ExtensionsTests.swift in Sources */,
+				B112C88A27A5A02600DA2B2B /* CCSignInViewControllerTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B112C87127A5053100DA2B2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B112C83227A4589E00DA2B2B /* CalcCal */;
+			targetProxy = B112C87027A5053100DA2B2B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B112C84127A458A200DA2B2B /* LaunchScreen.storyboard */ = {
@@ -424,6 +592,52 @@
 			};
 			name = Release;
 		};
+		B112C87227A5053100DA2B2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y487CY958A;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PaoloProdossimoLopes.FitnessMonitorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CalcCal.app/CalcCal";
+			};
+			name = Debug;
+		};
+		B112C87327A5053100DA2B2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y487CY958A;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PaoloProdossimoLopes.FitnessMonitorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CalcCal.app/CalcCal";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -441,6 +655,15 @@
 			buildConfigurations = (
 				B112C84827A458A200DA2B2B /* Debug */,
 				B112C84927A458A200DA2B2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B112C87427A5053100DA2B2B /* Build configuration list for PBXNativeTarget "FitnessMonitorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B112C87227A5053100DA2B2B /* Debug */,
+				B112C87327A5053100DA2B2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
