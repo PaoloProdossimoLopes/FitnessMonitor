@@ -194,9 +194,9 @@
 		B112C86D27A5053100DA2B2B /* FitnessMonitorTests */ = {
 			isa = PBXGroup;
 			children = (
+				B112C87527A5054000DA2B2B /* LIB */,
 				B112C88627A59FFB00DA2B2B /* Scenes */,
 				B112C88127A5818700DA2B2B /* TestHelpers */,
-				B112C87527A5054000DA2B2B /* LIB */,
 			);
 			path = FitnessMonitorTests;
 			sourceTree = "<group>";

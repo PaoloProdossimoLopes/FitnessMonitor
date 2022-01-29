@@ -25,6 +25,12 @@ final class CCSignInViewControllerTest: XCTestCase {
         XCTAssertEqual(componentsSUT.passwordTF.iconImage.image, UIImage(systemName: "lock"))
     }
     
+    func test_checkIfStackViewConstainsTheTextFields() {
+        componentsSUT = makeSUTs().components
+        XCTAssertTrue(componentsSUT.textFieldStackView.subviews.contains(componentsSUT.emailTF))
+        XCTAssertTrue(componentsSUT.textFieldStackView.subviews.contains(componentsSUT.passwordTF))
+    }
+    
     func test_UIComponentsIsNotNill() {
         controllerSUT = makeSUTs().controller
         _ = controllerSUT.view //start view
