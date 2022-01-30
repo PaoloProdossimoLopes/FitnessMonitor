@@ -41,7 +41,6 @@ final class CCSignInViewControllerTest: XCTestCase {
         _ = controllerSUT.view //start view
         XCTAssertNotNil(controllerSUT.UIComponents)
     }
-    
 }
 
 //MARK: - Helpers
