@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C243803C81A52F8C020D01F /* Pods_CalcCal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F6304D0FB9EC3FCF0339AA /* Pods_CalcCal.framework */; };
 		B112C83727A4589E00DA2B2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C83627A4589E00DA2B2B /* AppDelegate.swift */; };
 		B112C83927A4589E00DA2B2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C83827A4589E00DA2B2B /* SceneDelegate.swift */; };
 		B112C84027A458A200DA2B2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B112C83F27A458A200DA2B2B /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		B112C88527A597EC00DA2B2B /* CCPrimaryButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C88427A597EC00DA2B2B /* CCPrimaryButtonTests.swift */; };
 		B112C88A27A5A02600DA2B2B /* CCSignInViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C88927A5A02600DA2B2B /* CCSignInViewControllerTest.swift */; };
 		B112C88C27A5A1B500DA2B2B /* CCSignInUIComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C88B27A5A1B400DA2B2B /* CCSignInUIComponents.swift */; };
+		B112C89027A6138500DA2B2B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B112C88F27A6138500DA2B2B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F5CB87FC048C30762C2C467 /* Pods-CalcCal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalcCal.release.xcconfig"; path = "Target Support Files/Pods-CalcCal/Pods-CalcCal.release.xcconfig"; sourceTree = "<group>"; };
+		87F6304D0FB9EC3FCF0339AA /* Pods_CalcCal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalcCal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B112C83327A4589E00DA2B2B /* CalcCal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalcCal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B112C83627A4589E00DA2B2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B112C83827A4589E00DA2B2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 		B112C88427A597EC00DA2B2B /* CCPrimaryButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCPrimaryButtonTests.swift; sourceTree = "<group>"; };
 		B112C88927A5A02600DA2B2B /* CCSignInViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCSignInViewControllerTest.swift; sourceTree = "<group>"; };
 		B112C88B27A5A1B400DA2B2B /* CCSignInUIComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCSignInUIComponents.swift; sourceTree = "<group>"; };
+		B112C88F27A6138500DA2B2B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FD54ADAAD3AD215E6095DF87 /* Pods-CalcCal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalcCal.debug.xcconfig"; path = "Target Support Files/Pods-CalcCal/Pods-CalcCal.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C243803C81A52F8C020D01F /* Pods_CalcCal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +94,8 @@
 				B112C83527A4589E00DA2B2B /* CalcCal */,
 				B112C86D27A5053100DA2B2B /* FitnessMonitorTests */,
 				B112C83427A4589E00DA2B2B /* Products */,
+				B8D9CEABE68DFBE8A1CBE26D /* Pods */,
+				DA38603C602F89A822372F83 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +115,7 @@
 				B112C84B27A458E000DA2B2B /* Scenes */,
 				B112C84A27A458D700DA2B2B /* Defaults */,
 				B112C84427A458A200DA2B2B /* Info.plist */,
+				B112C88F27A6138500DA2B2B /* GoogleService-Info.plist */,
 			);
 			path = CalcCal;
 			sourceTree = "<group>";
@@ -269,6 +279,23 @@
 			path = SignIn;
 			sourceTree = "<group>";
 		};
+		B8D9CEABE68DFBE8A1CBE26D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD54ADAAD3AD215E6095DF87 /* Pods-CalcCal.debug.xcconfig */,
+				3F5CB87FC048C30762C2C467 /* Pods-CalcCal.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DA38603C602F89A822372F83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87F6304D0FB9EC3FCF0339AA /* Pods_CalcCal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -276,9 +303,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B112C84727A458A200DA2B2B /* Build configuration list for PBXNativeTarget "CalcCal" */;
 			buildPhases = (
+				E6326F26BC367551C4E54BDF /* [CP] Check Pods Manifest.lock */,
 				B112C82F27A4589E00DA2B2B /* Sources */,
 				B112C83027A4589E00DA2B2B /* Frameworks */,
 				B112C83127A4589E00DA2B2B /* Resources */,
+				FBF43761219A623F1BA6A633 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -352,6 +381,7 @@
 			files = (
 				B112C84327A458A200DA2B2B /* LaunchScreen.storyboard in Resources */,
 				B112C84027A458A200DA2B2B /* Assets.xcassets in Resources */,
+				B112C89027A6138500DA2B2B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +393,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E6326F26BC367551C4E54BDF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CalcCal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBF43761219A623F1BA6A633 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CalcCal/Pods-CalcCal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CalcCal/Pods-CalcCal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CalcCal/Pods-CalcCal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B112C82F27A4589E00DA2B2B /* Sources */ = {
@@ -536,6 +608,7 @@
 		};
 		B112C84827A458A200DA2B2B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD54ADAAD3AD215E6095DF87 /* Pods-CalcCal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -565,6 +638,7 @@
 		};
 		B112C84927A458A200DA2B2B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F5CB87FC048C30762C2C467 /* Pods-CalcCal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
