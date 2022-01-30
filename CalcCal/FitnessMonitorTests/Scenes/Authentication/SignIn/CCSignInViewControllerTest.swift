@@ -30,6 +30,7 @@ final class CCSignInViewControllerTest: XCTestCase {
         XCTAssertTrue(componentsSUT.textFieldStackView.subviews.contains(componentsSUT.emailTF))
         XCTAssertTrue(componentsSUT.textFieldStackView.subviews.contains(componentsSUT.passwordTF))
     }
+
     
     func test_UIComponentsIsNotNill() {
         controllerSUT = makeSUTs().controller
@@ -43,6 +44,8 @@ final class CCSignInViewControllerTest: XCTestCase {
 private extension CCSignInViewControllerTest {
     func makeSUTs() -> (controller: CCSignInViewController, components: CCSignInUIComponents) {
         let controller = CCSignInViewController()
+        _ = controller.view
+        controller.viewDidLoad()
         let components = CCSignInUIComponents(controller)
         return (controller, components)
     }
