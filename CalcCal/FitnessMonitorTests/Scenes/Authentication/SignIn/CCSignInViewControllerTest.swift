@@ -30,7 +30,11 @@ final class CCSignInViewControllerTest: XCTestCase {
         XCTAssertTrue(componentsSUT.textFieldStackView.subviews.contains(componentsSUT.emailTF))
         XCTAssertTrue(componentsSUT.textFieldStackView.subviews.contains(componentsSUT.passwordTF))
     }
-
+    
+    func test_checkIfBGIsWhite() {
+        controllerSUT = makeSUTs().controller
+        XCTAssertEqual(controllerSUT.view.backgroundColor, .white)
+    }
     
     func test_UIComponentsIsNotNill() {
         controllerSUT = makeSUTs().controller
