@@ -1,5 +1,5 @@
 //
-//  CCPrimaryTextField.swift
+//  FMPrimaryTextField.swift
 //  CalcCal
 //
 //  Created by Paolo Prodossimo Lopes on 28/01/22.
@@ -7,18 +7,18 @@
 
 import UIKit
 
-typealias CCPrimaryTextFieldProtocol = (
+typealias FMPrimaryTextFieldProtocol = (
     UIStackView & ConfigureLayoutProtocol
 )
 
-protocol CCPrimaryTextFieldDelegate: AnyObject {
+protocol FMPrimaryTextFieldDelegate: AnyObject {
     func notifyWhenTextFieldWasChanged()
 }
 
-final class CCPrimaryTextField: CCPrimaryTextFieldProtocol {
+final class FMPrimaryTextField: FMPrimaryTextFieldProtocol {
     
     private let invalidMessage: String
-    private let primaryDelegate: CCPrimaryTextFieldDelegate
+    private let primaryDelegate: FMPrimaryTextFieldDelegate
     private var validation: ((String) -> Bool)
     private var isSecure: Bool
     private var changesIsAnimate: Bool
@@ -82,9 +82,10 @@ final class CCPrimaryTextField: CCPrimaryTextFieldProtocol {
     //MARK: - Constructor
     
     init(
-        _ delegate: CCPrimaryTextFieldDelegate,
+        _ delegate: FMPrimaryTextFieldDelegate,
         image: String,
         placeholder: String,
+        textAlignment: NSTextAlignment = .left,
         customInvalidMessage: String = "❗️Esse campo contem informaçoes invalidas",
         isSecure: Bool = false,
         changesIsAnimate: Bool = true,
@@ -97,7 +98,9 @@ final class CCPrimaryTextField: CCPrimaryTextFieldProtocol {
         self.validation = validation
         super.init(frame: .zero)
         self.iconImage.image = UIImage(systemName: image)
+        self.iconImage.isHidden = self.iconImage.image == nil ? true : false
         self.mainTextField.placeholder = placeholder
+        self.mainTextField.textAlignment = textAlignment
         self.mainTextField.isSecureTextEntry = isSecure
         commonInit()
     }
@@ -130,7 +133,7 @@ final class CCPrimaryTextField: CCPrimaryTextFieldProtocol {
     
     //MARK: - Helpers
     
-    private func reloadCCPrimaryTextField(_ isSelected: Bool = false) {
+    private func reloadFMPrimaryTextField(_ isSelected: Bool = false) {
         if changesIsAnimate {
             UIView.animate(withDuration: 0.2) { [weak self] in
                 self?.configureReloadStyles(isSelected)
@@ -181,6 +184,10 @@ final class CCPrimaryTextField: CCPrimaryTextFieldProtocol {
         return validation(mainTextField.text ?? "")
     }
     
+    func getText() -> String {
+        return mainTextField.text ?? ""
+    }
+    
     //MARK: - Selector
     
     @objc private func closeButtonHandleTapped() {
@@ -196,14 +203,14 @@ final class CCPrimaryTextField: CCPrimaryTextFieldProtocol {
 }
 
 //MARK: - UITextFieldDelegate
-extension CCPrimaryTextField: UITextFieldDelegate {
+extension FMPrimaryTextField: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        reloadCCPrimaryTextField(true)
+        reloadFMPrimaryTextField(true)
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        reloadCCPrimaryTextField(false)
+        reloadFMPrimaryTextField(false)
     }
     
     func textFieldDidChangeSelection(_ textField: UITextField) {

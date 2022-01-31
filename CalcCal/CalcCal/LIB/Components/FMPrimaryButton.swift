@@ -1,5 +1,5 @@
 //
-//  CCPrimaryButton.swift
+//  FMPrimaryButton.swift
 //  CalcCal
 //
 //  Created by Paolo Prodossimo Lopes on 29/01/22.
@@ -7,29 +7,47 @@
 
 import UIKit
 
-typealias CCPrimaryButtonProtocol = (UIButton & ConfigureLayoutProtocol)
+typealias FMPrimaryButtonProtocol = (
+    UIButton & ConfigureLayoutProtocol
+)
 
-protocol CCPrimaryButtonDelegate: AnyObject {
-    func handleButtonTapped()
+protocol FMPrimaryButtonHideDelagate: AnyObject {
+    func hideLoader()
 }
 
-final class CCPrimaryButton: CCPrimaryButtonProtocol {
+protocol FMPrimaryButtonDelegate: AnyObject {
+    func handleButtonTapped(_ loader: FMPrimaryButtonHideDelagate)
+}
+
+final class FMPrimaryButton: FMPrimaryButtonProtocol {
     
     //MARK: - Properties
     
-    private let primaryDelegate: CCPrimaryButtonDelegate
+    private let primaryDelegate: FMPrimaryButtonDelegate
+    
     let buttonTitle: String
     let isAnimate: Bool
+    let hasLoader: Bool
+    
+    let loadingIndicator: ProgressView = {
+        let progress = ProgressView(
+            colors: [.white],
+            lineWidth: 5
+        )
+        progress.translatesAutoresizingMaskIntoConstraints = false
+        return progress
+    }()
     
     //MARK: - Constructor
     
     init(
-        _ delegate: CCPrimaryButtonDelegate,
-        btnTitle: String, isAnimate: Bool = true
+        _ delegate: FMPrimaryButtonDelegate,
+        btnTitle: String, isAnimate: Bool = true, hasLoader: Bool = false
     ) {
         self.primaryDelegate = delegate
         self.buttonTitle = btnTitle
         self.isAnimate = isAnimate
+        self.hasLoader = hasLoader
         super.init(frame: .zero)
         commonInit()
         addTarget(self, action: #selector(primaryButtonWasTapped), for: .touchUpInside)
@@ -83,7 +101,18 @@ final class CCPrimaryButton: CCPrimaryButtonProtocol {
     //MARK: - Selectors
     
     @objc private func primaryButtonWasTapped() {
-        primaryDelegate.handleButtonTapped()
+        self.setTitleColor(.clear, for: .normal)
+        loadingIndicator.showLoading(self)
+        primaryDelegate.handleButtonTapped(self)
     }
     
 }
+
+//MARK: - FMPrimaryButtonDisableHideDelagate
+extension FMPrimaryButton: FMPrimaryButtonHideDelagate {
+    func hideLoader() {
+        self.setTitleColor(.white, for: .normal)
+        loadingIndicator.stop()
+    }
+}
+

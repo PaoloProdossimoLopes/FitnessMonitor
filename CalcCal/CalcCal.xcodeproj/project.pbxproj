@@ -13,21 +13,40 @@
 		B112C84027A458A200DA2B2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B112C83F27A458A200DA2B2B /* Assets.xcassets */; };
 		B112C84327A458A200DA2B2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B112C84127A458A200DA2B2B /* LaunchScreen.storyboard */; };
 		B112C85327A459F700DA2B2B /* ConfigureLayoutProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C85227A459F700DA2B2B /* ConfigureLayoutProtocol.swift */; };
-		B112C85927A4C6F300DA2B2B /* CCSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C85827A4C6F300DA2B2B /* CCSignInViewController.swift */; };
-		B112C85D27A4CF2E00DA2B2B /* CCPrimaryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C85C27A4CF2E00DA2B2B /* CCPrimaryTextField.swift */; };
+		B112C85927A4C6F300DA2B2B /* FMSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C85827A4C6F300DA2B2B /* FMSignInViewController.swift */; };
+		B112C85D27A4CF2E00DA2B2B /* FMPrimaryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C85C27A4CF2E00DA2B2B /* FMPrimaryTextField.swift */; };
 		B112C86027A4D4B100DA2B2B /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C85F27A4D4B100DA2B2B /* UITextField+Extensions.swift */; };
-		B112C86327A4E4A000DA2B2B /* CCValidators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C86227A4E4A000DA2B2B /* CCValidators.swift */; };
+		B112C86327A4E4A000DA2B2B /* FMValidators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C86227A4E4A000DA2B2B /* FMValidators.swift */; };
 		B112C86527A4E4FA00DA2B2B /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C86427A4E4FA00DA2B2B /* String+Extensions.swift */; };
-		B112C86727A4F3D900DA2B2B /* CCPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C86627A4F3D900DA2B2B /* CCPrimaryButton.swift */; };
+		B112C86727A4F3D900DA2B2B /* FMPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C86627A4F3D900DA2B2B /* FMPrimaryButton.swift */; };
 		B112C87827A5058600DA2B2B /* UITextField+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C87727A5058600DA2B2B /* UITextField+ExtensionsTests.swift */; };
 		B112C87A27A566A600DA2B2B /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C87927A566A600DA2B2B /* StringExtensionsTests.swift */; };
-		B112C87D27A567F800DA2B2B /* CCValidatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C87C27A567F800DA2B2B /* CCValidatorsTests.swift */; };
+		B112C87D27A567F800DA2B2B /* FMValidatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C87C27A567F800DA2B2B /* FMValidatorsTests.swift */; };
 		B112C88027A5736200DA2B2B /* CCPrimaryTextFieldTets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C87F27A5736200DA2B2B /* CCPrimaryTextFieldTets.swift */; };
 		B112C88327A581A200DA2B2B /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C88227A581A200DA2B2B /* XCTestCase+Extensions.swift */; };
 		B112C88527A597EC00DA2B2B /* CCPrimaryButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C88427A597EC00DA2B2B /* CCPrimaryButtonTests.swift */; };
-		B112C88A27A5A02600DA2B2B /* CCSignInViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C88927A5A02600DA2B2B /* CCSignInViewControllerTest.swift */; };
-		B112C88C27A5A1B500DA2B2B /* CCSignInUIComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C88B27A5A1B400DA2B2B /* CCSignInUIComponents.swift */; };
+		B112C88A27A5A02600DA2B2B /* FMSignInViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C88927A5A02600DA2B2B /* FMSignInViewControllerTest.swift */; };
+		B112C88C27A5A1B500DA2B2B /* FMSignInApartedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C88B27A5A1B400DA2B2B /* FMSignInApartedView.swift */; };
 		B112C89027A6138500DA2B2B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B112C88F27A6138500DA2B2B /* GoogleService-Info.plist */; };
+		B112C89327A61B6400DA2B2B /* FMHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C89227A61B6400DA2B2B /* FMHomeViewController.swift */; };
+		B112C89627A6254800DA2B2B /* FMSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C89527A6254800DA2B2B /* FMSignUpViewController.swift */; };
+		B112C89927A6261700DA2B2B /* FMMultipleTextStyleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C89827A6261700DA2B2B /* FMMultipleTextStyleLabel.swift */; };
+		B112C89B27A6299400DA2B2B /* FMTextStylesFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C89A27A6299400DA2B2B /* FMTextStylesFormatters.swift */; };
+		B112C89D27A62CBB00DA2B2B /* FMBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C89C27A62CBB00DA2B2B /* FMBaseViewController.swift */; };
+		B112C89F27A6B19600DA2B2B /* FMApartedBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C89E27A6B19600DA2B2B /* FMApartedBaseView.swift */; };
+		B112C8A127A6B26500DA2B2B /* FMSignUpApartedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C8A027A6B26500DA2B2B /* FMSignUpApartedView.swift */; };
+		B129981927A6F53E00DEB735 /* CircularLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B129981827A6F53E00DEB735 /* CircularLoadingView.swift */; };
+		B129981B27A7028300DEB735 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B129981A27A7028300DEB735 /* ProgressView.swift */; };
+		B129981D27A704CD00DEB735 /* ProgressShapeLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B129981C27A704CD00DEB735 /* ProgressShapeLayer.swift */; };
+		B129981F27A7052300DEB735 /* StrokeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B129981E27A7052300DEB735 /* StrokeAnimation.swift */; };
+		B129982527A709EF00DEB735 /* RotationAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B129982427A709EF00DEB735 /* RotationAnimation.swift */; };
+		B129982727A70A8B00DEB735 /* StrokeColorAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B129982627A70A8B00DEB735 /* StrokeColorAnimation.swift */; };
+		B129982927A72EDD00DEB735 /* FMFirebaseAPIAcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = B129982827A72EDD00DEB735 /* FMFirebaseAPIAcess.swift */; };
+		B129982C27A72FBE00DEB735 /* FMServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B129982B27A72FBE00DEB735 /* FMServiceManager.swift */; };
+		B129982E27A7303400DEB735 /* FMLocalServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B129982D27A7303400DEB735 /* FMLocalServiceManager.swift */; };
+		B129983027A7305500DEB735 /* FMRemoteServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B129982F27A7305500DEB735 /* FMRemoteServiceManager.swift */; };
+		B129983327A77D5A00DEB735 /* FMSignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B129983227A77D5A00DEB735 /* FMSignUpViewModel.swift */; };
+		B129983727A77F7900DEB735 /* FMSignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B129983627A77F7900DEB735 /* FMSignInViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,22 +69,41 @@
 		B112C84227A458A200DA2B2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B112C84427A458A200DA2B2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B112C85227A459F700DA2B2B /* ConfigureLayoutProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureLayoutProtocol.swift; sourceTree = "<group>"; };
-		B112C85827A4C6F300DA2B2B /* CCSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCSignInViewController.swift; sourceTree = "<group>"; };
-		B112C85C27A4CF2E00DA2B2B /* CCPrimaryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCPrimaryTextField.swift; sourceTree = "<group>"; };
+		B112C85827A4C6F300DA2B2B /* FMSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMSignInViewController.swift; sourceTree = "<group>"; };
+		B112C85C27A4CF2E00DA2B2B /* FMPrimaryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMPrimaryTextField.swift; sourceTree = "<group>"; };
 		B112C85F27A4D4B100DA2B2B /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
-		B112C86227A4E4A000DA2B2B /* CCValidators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCValidators.swift; sourceTree = "<group>"; };
+		B112C86227A4E4A000DA2B2B /* FMValidators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMValidators.swift; sourceTree = "<group>"; };
 		B112C86427A4E4FA00DA2B2B /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
-		B112C86627A4F3D900DA2B2B /* CCPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCPrimaryButton.swift; sourceTree = "<group>"; };
+		B112C86627A4F3D900DA2B2B /* FMPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMPrimaryButton.swift; sourceTree = "<group>"; };
 		B112C86C27A5053100DA2B2B /* FitnessMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitnessMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B112C87727A5058600DA2B2B /* UITextField+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+ExtensionsTests.swift"; sourceTree = "<group>"; };
 		B112C87927A566A600DA2B2B /* StringExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsTests.swift; sourceTree = "<group>"; };
-		B112C87C27A567F800DA2B2B /* CCValidatorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCValidatorsTests.swift; sourceTree = "<group>"; };
+		B112C87C27A567F800DA2B2B /* FMValidatorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMValidatorsTests.swift; sourceTree = "<group>"; };
 		B112C87F27A5736200DA2B2B /* CCPrimaryTextFieldTets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCPrimaryTextFieldTets.swift; sourceTree = "<group>"; };
 		B112C88227A581A200DA2B2B /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
 		B112C88427A597EC00DA2B2B /* CCPrimaryButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCPrimaryButtonTests.swift; sourceTree = "<group>"; };
-		B112C88927A5A02600DA2B2B /* CCSignInViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCSignInViewControllerTest.swift; sourceTree = "<group>"; };
-		B112C88B27A5A1B400DA2B2B /* CCSignInUIComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCSignInUIComponents.swift; sourceTree = "<group>"; };
+		B112C88927A5A02600DA2B2B /* FMSignInViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMSignInViewControllerTest.swift; sourceTree = "<group>"; };
+		B112C88B27A5A1B400DA2B2B /* FMSignInApartedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMSignInApartedView.swift; sourceTree = "<group>"; };
 		B112C88F27A6138500DA2B2B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B112C89227A61B6400DA2B2B /* FMHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMHomeViewController.swift; sourceTree = "<group>"; };
+		B112C89527A6254800DA2B2B /* FMSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMSignUpViewController.swift; sourceTree = "<group>"; };
+		B112C89827A6261700DA2B2B /* FMMultipleTextStyleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMMultipleTextStyleLabel.swift; sourceTree = "<group>"; };
+		B112C89A27A6299400DA2B2B /* FMTextStylesFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMTextStylesFormatters.swift; sourceTree = "<group>"; };
+		B112C89C27A62CBB00DA2B2B /* FMBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMBaseViewController.swift; sourceTree = "<group>"; };
+		B112C89E27A6B19600DA2B2B /* FMApartedBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMApartedBaseView.swift; sourceTree = "<group>"; };
+		B112C8A027A6B26500DA2B2B /* FMSignUpApartedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMSignUpApartedView.swift; sourceTree = "<group>"; };
+		B129981827A6F53E00DEB735 /* CircularLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularLoadingView.swift; sourceTree = "<group>"; };
+		B129981A27A7028300DEB735 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		B129981C27A704CD00DEB735 /* ProgressShapeLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressShapeLayer.swift; sourceTree = "<group>"; };
+		B129981E27A7052300DEB735 /* StrokeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeAnimation.swift; sourceTree = "<group>"; };
+		B129982427A709EF00DEB735 /* RotationAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationAnimation.swift; sourceTree = "<group>"; };
+		B129982627A70A8B00DEB735 /* StrokeColorAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeColorAnimation.swift; sourceTree = "<group>"; };
+		B129982827A72EDD00DEB735 /* FMFirebaseAPIAcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMFirebaseAPIAcess.swift; sourceTree = "<group>"; };
+		B129982B27A72FBE00DEB735 /* FMServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMServiceManager.swift; sourceTree = "<group>"; };
+		B129982D27A7303400DEB735 /* FMLocalServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMLocalServiceManager.swift; sourceTree = "<group>"; };
+		B129982F27A7305500DEB735 /* FMRemoteServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMRemoteServiceManager.swift; sourceTree = "<group>"; };
+		B129983227A77D5A00DEB735 /* FMSignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMSignUpViewModel.swift; sourceTree = "<group>"; };
+		B129983627A77F7900DEB735 /* FMSignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMSignInViewModel.swift; sourceTree = "<group>"; };
 		FD54ADAAD3AD215E6095DF87 /* Pods-CalcCal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalcCal.debug.xcconfig"; path = "Target Support Files/Pods-CalcCal/Pods-CalcCal.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +149,7 @@
 		B112C83527A4589E00DA2B2B /* CalcCal */ = {
 			isa = PBXGroup;
 			children = (
+				B129982A27A72F9C00DEB735 /* API */,
 				B112C85127A459CA00DA2B2B /* LIB */,
 				B112C84B27A458E000DA2B2B /* Scenes */,
 				B112C84A27A458D700DA2B2B /* Defaults */,
@@ -134,6 +173,7 @@
 		B112C84B27A458E000DA2B2B /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B112C89127A61B4800DA2B2B /* Home */,
 				B112C84C27A4597500DA2B2B /* Authentication */,
 			);
 			path = Scenes;
@@ -142,6 +182,7 @@
 		B112C84C27A4597500DA2B2B /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				B112C89427A6253300DA2B2B /* SignUp */,
 				B112C85727A4C6DA00DA2B2B /* SignIn */,
 			);
 			path = Authentication;
@@ -161,8 +202,8 @@
 		B112C85727A4C6DA00DA2B2B /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
-				B112C85827A4C6F300DA2B2B /* CCSignInViewController.swift */,
-				B112C88B27A5A1B400DA2B2B /* CCSignInUIComponents.swift */,
+				B129983827A77F9500DEB735 /* View */,
+				B129983527A77F6C00DEB735 /* ViewModel */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -178,8 +219,13 @@
 		B112C85B27A4CF1E00DA2B2B /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				B112C85C27A4CF2E00DA2B2B /* CCPrimaryTextField.swift */,
-				B112C86627A4F3D900DA2B2B /* CCPrimaryButton.swift */,
+				B129982027A7089B00DEB735 /* CCBasicProgressView */,
+				B129981827A6F53E00DEB735 /* CircularLoadingView.swift */,
+				B112C85C27A4CF2E00DA2B2B /* FMPrimaryTextField.swift */,
+				B112C86627A4F3D900DA2B2B /* FMPrimaryButton.swift */,
+				B112C89827A6261700DA2B2B /* FMMultipleTextStyleLabel.swift */,
+				B112C89C27A62CBB00DA2B2B /* FMBaseViewController.swift */,
+				B112C89E27A6B19600DA2B2B /* FMApartedBaseView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -196,7 +242,8 @@
 		B112C86127A4E48F00DA2B2B /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				B112C86227A4E4A000DA2B2B /* CCValidators.swift */,
+				B112C86227A4E4A000DA2B2B /* FMValidators.swift */,
+				B112C89A27A6299400DA2B2B /* FMTextStylesFormatters.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -233,7 +280,7 @@
 		B112C87B27A567EB00DA2B2B /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				B112C87C27A567F800DA2B2B /* CCValidatorsTests.swift */,
+				B112C87C27A567F800DA2B2B /* FMValidatorsTests.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -274,9 +321,83 @@
 		B112C88827A5A00500DA2B2B /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
-				B112C88927A5A02600DA2B2B /* CCSignInViewControllerTest.swift */,
+				B112C88927A5A02600DA2B2B /* FMSignInViewControllerTest.swift */,
 			);
 			path = SignIn;
+			sourceTree = "<group>";
+		};
+		B112C89127A61B4800DA2B2B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B112C89227A61B6400DA2B2B /* FMHomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B112C89427A6253300DA2B2B /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				B129983427A77EA800DEB735 /* View */,
+				B129983127A77D5000DEB735 /* ViewModel */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		B129982027A7089B00DEB735 /* CCBasicProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				B129981A27A7028300DEB735 /* ProgressView.swift */,
+				B129981E27A7052300DEB735 /* StrokeAnimation.swift */,
+				B129981C27A704CD00DEB735 /* ProgressShapeLayer.swift */,
+				B129982427A709EF00DEB735 /* RotationAnimation.swift */,
+				B129982627A70A8B00DEB735 /* StrokeColorAnimation.swift */,
+			);
+			path = CCBasicProgressView;
+			sourceTree = "<group>";
+		};
+		B129982A27A72F9C00DEB735 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B129982B27A72FBE00DEB735 /* FMServiceManager.swift */,
+				B129982827A72EDD00DEB735 /* FMFirebaseAPIAcess.swift */,
+				B129982D27A7303400DEB735 /* FMLocalServiceManager.swift */,
+				B129982F27A7305500DEB735 /* FMRemoteServiceManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		B129983127A77D5000DEB735 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B129983227A77D5A00DEB735 /* FMSignUpViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B129983427A77EA800DEB735 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B112C89527A6254800DA2B2B /* FMSignUpViewController.swift */,
+				B112C8A027A6B26500DA2B2B /* FMSignUpApartedView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B129983527A77F6C00DEB735 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B129983627A77F7900DEB735 /* FMSignInViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B129983827A77F9500DEB735 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B112C85827A4C6F300DA2B2B /* FMSignInViewController.swift */,
+				B112C88B27A5A1B400DA2B2B /* FMSignInApartedView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		B8D9CEABE68DFBE8A1CBE26D /* Pods */ = {
@@ -441,16 +562,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B112C85927A4C6F300DA2B2B /* CCSignInViewController.swift in Sources */,
-				B112C88C27A5A1B500DA2B2B /* CCSignInUIComponents.swift in Sources */,
-				B112C86327A4E4A000DA2B2B /* CCValidators.swift in Sources */,
+				B129982727A70A8B00DEB735 /* StrokeColorAnimation.swift in Sources */,
+				B112C85927A4C6F300DA2B2B /* FMSignInViewController.swift in Sources */,
+				B112C88C27A5A1B500DA2B2B /* FMSignInApartedView.swift in Sources */,
+				B129981D27A704CD00DEB735 /* ProgressShapeLayer.swift in Sources */,
+				B112C8A127A6B26500DA2B2B /* FMSignUpApartedView.swift in Sources */,
+				B112C89327A61B6400DA2B2B /* FMHomeViewController.swift in Sources */,
+				B129982E27A7303400DEB735 /* FMLocalServiceManager.swift in Sources */,
+				B112C89927A6261700DA2B2B /* FMMultipleTextStyleLabel.swift in Sources */,
+				B112C86327A4E4A000DA2B2B /* FMValidators.swift in Sources */,
+				B129982927A72EDD00DEB735 /* FMFirebaseAPIAcess.swift in Sources */,
 				B112C83727A4589E00DA2B2B /* AppDelegate.swift in Sources */,
-				B112C85D27A4CF2E00DA2B2B /* CCPrimaryTextField.swift in Sources */,
-				B112C86727A4F3D900DA2B2B /* CCPrimaryButton.swift in Sources */,
+				B129982527A709EF00DEB735 /* RotationAnimation.swift in Sources */,
+				B112C85D27A4CF2E00DA2B2B /* FMPrimaryTextField.swift in Sources */,
+				B112C89627A6254800DA2B2B /* FMSignUpViewController.swift in Sources */,
+				B112C86727A4F3D900DA2B2B /* FMPrimaryButton.swift in Sources */,
+				B112C89D27A62CBB00DA2B2B /* FMBaseViewController.swift in Sources */,
+				B129981F27A7052300DEB735 /* StrokeAnimation.swift in Sources */,
+				B112C89B27A6299400DA2B2B /* FMTextStylesFormatters.swift in Sources */,
+				B129983027A7305500DEB735 /* FMRemoteServiceManager.swift in Sources */,
+				B129983327A77D5A00DEB735 /* FMSignUpViewModel.swift in Sources */,
 				B112C86527A4E4FA00DA2B2B /* String+Extensions.swift in Sources */,
 				B112C86027A4D4B100DA2B2B /* UITextField+Extensions.swift in Sources */,
 				B112C85327A459F700DA2B2B /* ConfigureLayoutProtocol.swift in Sources */,
 				B112C83927A4589E00DA2B2B /* SceneDelegate.swift in Sources */,
+				B129982C27A72FBE00DEB735 /* FMServiceManager.swift in Sources */,
+				B129981B27A7028300DEB735 /* ProgressView.swift in Sources */,
+				B129983727A77F7900DEB735 /* FMSignInViewModel.swift in Sources */,
+				B112C89F27A6B19600DA2B2B /* FMApartedBaseView.swift in Sources */,
+				B129981927A6F53E00DEB735 /* CircularLoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,12 +599,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B112C88527A597EC00DA2B2B /* CCPrimaryButtonTests.swift in Sources */,
-				B112C87D27A567F800DA2B2B /* CCValidatorsTests.swift in Sources */,
+				B112C87D27A567F800DA2B2B /* FMValidatorsTests.swift in Sources */,
 				B112C87A27A566A600DA2B2B /* StringExtensionsTests.swift in Sources */,
 				B112C88327A581A200DA2B2B /* XCTestCase+Extensions.swift in Sources */,
 				B112C88027A5736200DA2B2B /* CCPrimaryTextFieldTets.swift in Sources */,
 				B112C87827A5058600DA2B2B /* UITextField+ExtensionsTests.swift in Sources */,
-				B112C88A27A5A02600DA2B2B /* CCSignInViewControllerTest.swift in Sources */,
+				B112C88A27A5A02600DA2B2B /* FMSignInViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,6 +814,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y487CY958A;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/Pods/Firebase/CoreOnly/Sources";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -697,6 +838,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y487CY958A;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/Pods/Firebase/CoreOnly/Sources";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

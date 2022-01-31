@@ -1,5 +1,5 @@
 //
-//  CCSignInViewControllerTest.swift
+//  FMSignInViewControllerTest.swift
 //  FitnessMonitorTests
 //
 //  Created by Paolo Prodossimo Lopes on 29/01/22.
@@ -8,10 +8,10 @@
 import XCTest
 @testable import CalcCal
 
-final class CCSignInViewControllerTest: XCTestCase {
+final class FMSignInViewControllerTest: XCTestCase {
     
-    var controllerSUT: CCSignInViewController!
-    var componentsSUT: CCSignInUIComponents!
+    var controllerSUT: FMSignInViewController!
+    var componentsSUT: FMSignInApartedView!
     
     func test_verifyIfEmailTFwasCorreectInformations() {
         (_, componentsSUT) = makeSUTs()
@@ -39,17 +39,17 @@ final class CCSignInViewControllerTest: XCTestCase {
     func test_UIComponentsIsNotNill() {
         controllerSUT = makeSUTs().controller
         _ = controllerSUT.view //start view
-        XCTAssertNotNil(controllerSUT.UIComponents)
+        XCTAssertNotNil(controllerSUT.FMApartedView)
     }
 }
 
 //MARK: - Helpers
-private extension CCSignInViewControllerTest {
-    func makeSUTs() -> (controller: CCSignInViewController, components: CCSignInUIComponents) {
-        let controller = CCSignInViewController()
+private extension FMSignInViewControllerTest {
+    func makeSUTs() -> (controller: FMSignInViewController, components: FMSignInApartedView) {
+        let controller = FMSignInViewController()
         _ = controller.view
         controller.viewDidLoad()
-        let components = CCSignInUIComponents(controller)
+        let components = FMSignInApartedView(controller)
         return (controller, components)
     }
 }

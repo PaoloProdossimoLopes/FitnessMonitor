@@ -5,8 +5,14 @@
 //  Created by Paolo Prodossimo Lopes on 28/01/22.
 //
 
-import Foundation
+import UIKit
 
 extension String {
-    func validateAsEmail() -> Bool { return CCValidators.validateAsEmail(self) }
+    
+    func validateAsEmail() -> Bool { return FMValidators.validateAsEmail(self) }
+    
+    var underLined: NSAttributedString {
+        FMTextStylesFormatters.underlinePropertieGetter(self)
+    }
+    
 }

@@ -1,18 +1,19 @@
 //
-//  CCPrimaryButtonTests.swift
+//  FMPrimaryButtonTests.swift
 //  FitnessMonitorTests
 //
 //  Created by Paolo Prodossimo Lopes on 29/01/22.
 //
 
 import XCTest
+
 @testable import CalcCal
 
-final class CCPrimaryButtonTest: XCTestCase {
+final class FMPrimaryButtonTest: XCTestCase {
     
-    var sut: CCPrimaryButton!
+    var sut: FMPrimaryButton!
     
-    func test_CCPrimaryButton_AssignAllRequiredInheritance() {
+    func test_FMPrimaryButton_AssignAllRequiredInheritance() {
         sut = makeSUT()
         XCTAssertInheritance(this: sut!, isInheritance: UIButton.self)
         XCTAssertInheritance(this: sut!, isInheritance: ConfigureLayoutProtocol.self)
@@ -51,17 +52,17 @@ final class CCPrimaryButtonTest: XCTestCase {
 }
 
 //MARK: - Helpers
-extension CCPrimaryButtonTest {
+extension FMPrimaryButtonTest {
     func makeSUT(
         title: String = "",
         isAnimate: Bool = true
-    ) -> CCPrimaryButton {
-        let sut = CCPrimaryButton(self, btnTitle: title, isAnimate: isAnimate)
+    ) -> FMPrimaryButton {
+        let sut = FMPrimaryButton(self, btnTitle: title, isAnimate: isAnimate)
         return sut
     }
 }
 
-//MARK: - CCPrimaryButtonDelegate
-extension CCPrimaryButtonTest: CCPrimaryButtonDelegate {
+//MARK: - FMPrimaryButtonDelegate
+extension FMPrimaryButtonTest: FMPrimaryButtonDelegate {
     func handleButtonTapped() { /*Is not nescessary*/  }
 }

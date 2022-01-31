@@ -1,5 +1,5 @@
 //
-//  CCPrimaryTextFieldTets.swift
+//  FMPrimaryTextFieldTets.swift
 //  FitnessMonitorTests
 //
 //  Created by Paolo Prodossimo Lopes on 29/01/22.
@@ -8,11 +8,11 @@
 import XCTest
 @testable import CalcCal
 
-final class CCPrimaryTextFieldTests: XCTestCase {
+final class FMPrimaryTextFieldTests: XCTestCase {
     
-    var sut: CCPrimaryTextField!
+    var sut: FMPrimaryTextField!
     
-    func test_CCPrimaryTextFieldTests_inherance_IsCorrect() {
+    func test_FMPrimaryTextFieldTests_inherance_IsCorrect() {
         XCTAssertInheritance(this: makeSUT(), isInheritance: UIStackView.self)
         XCTAssertInheritance(this: makeSUT().mainTextField, isInheritance: UITextField.self)
         XCTAssertInheritance(this: makeSUT().iconImage, isInheritance: UIImageView.self)
@@ -109,15 +109,15 @@ final class CCPrimaryTextFieldTests: XCTestCase {
 }
 
 //MARK: - Helpers
-extension CCPrimaryTextFieldTests {
+extension FMPrimaryTextFieldTests {
     func makeSUT(
         image: String = "xmark",
         placeholder: String = "placeholder here",
         customInvalidMessage: String = "error message here ...",
         isSecure: Bool = false,
         changesIsAnimate: Bool = true
-    ) -> CCPrimaryTextField {
-        let sut = CCPrimaryTextField.init(
+    ) -> FMPrimaryTextField {
+        let sut = FMPrimaryTextField.init(
             self, image: image,
             placeholder: placeholder,
             customInvalidMessage: customInvalidMessage,
@@ -130,8 +130,8 @@ extension CCPrimaryTextFieldTests {
     }
 }
 
-//MARK: - CCPrimaryTextFieldDelegate
-extension CCPrimaryTextFieldTests: CCPrimaryTextFieldDelegate {
+//MARK: - FMPrimaryTextFieldDelegate
+extension FMPrimaryTextFieldTests: FMPrimaryTextFieldDelegate {
     func notifyWhenTextFieldWasChanged() { }
 }
 

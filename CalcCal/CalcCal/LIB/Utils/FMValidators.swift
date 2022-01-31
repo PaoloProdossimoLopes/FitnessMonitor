@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CCValidators {
+struct FMValidators {
     
     static func validateAsEmail(_ emailText: String) -> Bool {
         let emailRegEx = "(?:[a-zA-Z0-9!#$%\\&‘*+/=?\\^_`{|}~-]+(?:\\.[a-zA-Z0-9!#$%\\&'*+/=?\\^_`{|}" +

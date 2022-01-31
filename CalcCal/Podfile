@@ -2,8 +2,11 @@
 # platform :ios, '9.0'
 
 target 'CalcCal' do
-  use_frameworks!
+  target 'TestTargetName' do
+    inherit! :search_paths
+  end
   
+  use_frameworks!
   pod 'Firebase/Auth'
 
 end
