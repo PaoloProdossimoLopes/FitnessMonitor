@@ -10,6 +10,9 @@ import Foundation
 protocol FMServiceManagerProtocol {
     func registerAccount(email: String, password: String,
                          completion: @escaping (Bool) -> Void)
+    
+    func saveLocalUSerInformations(email: String, password: String)
+    func getLocalUserInformations() -> (email: String, password: String)
 }
 
 final class FMServiceManager: FMServiceManagerProtocol {
@@ -47,6 +50,18 @@ final class FMServiceManager: FMServiceManagerProtocol {
         remoteManager.signIn(email: email, password: password) { _ in
             completion(true)
         }
+    }
+    
+    func logOut(completion: (Bool) -> Void) {
+        remoteManager.logOut(completion)
+    }
+    
+    func saveLocalUSerInformations(email: String, password: String) {
+        localManager.saveOnLocalDataBase(email: email, password: password)
+    }
+    
+    func getLocalUserInformations() -> (email: String, password: String) {
+        return localManager.getOnLocalDataBase()
     }
     
 }

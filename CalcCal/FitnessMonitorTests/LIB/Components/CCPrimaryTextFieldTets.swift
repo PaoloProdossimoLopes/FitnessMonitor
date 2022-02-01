@@ -18,7 +18,7 @@ final class FMPrimaryTextFieldTests: XCTestCase {
         XCTAssertInheritance(this: makeSUT().iconImage, isInheritance: UIImageView.self)
         XCTAssertInheritance(this: makeSUT().validationMessageLabel, isInheritance: UILabel.self)
         XCTAssertInheritance(this: makeSUT().clearButton, isInheritance: UIButton.self)
-        XCTAssertInheritance(this: makeSUT(), isInheritance: ConfigureLayoutProtocol.self)
+        XCTAssertInheritance(this: makeSUT(), isInheritance: FMConfigureLayoutProtocol.self)
     }
     
     func test_iconImage_wasInitialized() {

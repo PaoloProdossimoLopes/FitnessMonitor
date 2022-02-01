@@ -8,7 +8,7 @@
 import UIKit
 
 typealias FMPrimaryTextFieldProtocol = (
-    UIStackView & ConfigureLayoutProtocol
+    UIStackView & FMConfigureLayoutProtocol
 )
 
 protocol FMPrimaryTextFieldDelegate: AnyObject {
@@ -109,7 +109,7 @@ final class FMPrimaryTextField: FMPrimaryTextFieldProtocol {
         fatalError("init(coder:) has not been implemented")
     }
     
-    //MARK: - ConfigureLayoutProtocol
+    //MARK: - FMConfigureLayoutProtocol
     
     func configureViewHierarchy() {
         addArrangedSubview(HStackView)

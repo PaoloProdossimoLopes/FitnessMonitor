@@ -8,7 +8,7 @@
 import UIKit
 
 typealias FMBaseViewControllerProtocol = (
-    UIViewController & ConfigureLayoutProtocol
+    UIViewController & FMConfigureLayoutProtocol
 )
 
 class FMBaseViewController: FMBaseViewControllerProtocol {
@@ -24,6 +24,19 @@ class FMBaseViewController: FMBaseViewControllerProtocol {
     
     func configureStyle() {
         self.view.backgroundColor = .white
+        self.navigationController?.view.backgroundColor = .white
+        configureNavBarStyle()
+    }
+    
+    private func configureNavBarStyle() {
+        if let navBar = self.navigationController?.navigationBar {
+            navBar.largeTitleTextAttributes = [.foregroundColor : UIColor.black]
+            navBar.titleTextAttributes = [.foregroundColor : UIColor.black]
+            
+            navBar.isTranslucent = false
+            navBar.backgroundColor = .white
+            navBar.barTintColor = .white
+        }
     }
     
 }

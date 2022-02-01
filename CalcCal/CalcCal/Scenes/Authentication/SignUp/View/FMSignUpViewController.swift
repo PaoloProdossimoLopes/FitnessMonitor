@@ -11,7 +11,7 @@ import FirebaseAuth
 final class FMSignUpViewController: FMBaseViewController {
     
     //MARK: - Properties
-    private var FMApartedView: FMSignUpApartedView { .init(self) }
+    private lazy var FMApartedView: FMSignUpApartedView = .init(self) 
     private let viewModel: FMSignUpViewModelProtocol
     
     //MARK: - Constructor
@@ -35,7 +35,7 @@ final class FMSignUpViewController: FMBaseViewController {
         super.viewDidLoad()
     }
     
-    //MARK: - ConfigureLayoutProtocol
+    //MARK: - FMConfigureLayoutProtocol
     
     override func configureStyle() {
         super.configureStyle()
@@ -54,9 +54,9 @@ final class FMSignUpViewController: FMBaseViewController {
     }
     
     private func goToHome() {
-        let controller = FMHomeViewController()
-        controller.modalPresentationStyle = .fullScreen
-        self.present(controller, animated: true, completion: nil)
+        let nav = FMOrchestradorTabViewController()
+        nav.modalPresentationStyle = .fullScreen
+        self.present(nav, animated: true, completion: nil)
     }
     
     private func registerButtonHandle(_ loader: FMPrimaryButtonHideDelagate) {

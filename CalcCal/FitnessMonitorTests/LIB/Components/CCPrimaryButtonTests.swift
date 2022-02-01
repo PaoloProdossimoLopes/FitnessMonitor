@@ -16,7 +16,7 @@ final class FMPrimaryButtonTest: XCTestCase {
     func test_FMPrimaryButton_AssignAllRequiredInheritance() {
         sut = makeSUT()
         XCTAssertInheritance(this: sut!, isInheritance: UIButton.self)
-        XCTAssertInheritance(this: sut!, isInheritance: ConfigureLayoutProtocol.self)
+        XCTAssertInheritance(this: sut!, isInheritance: FMConfigureLayoutProtocol.self)
     }
     
     func test_ifTitleIsSetupCorrectly() {
@@ -64,5 +64,7 @@ extension FMPrimaryButtonTest {
 
 //MARK: - FMPrimaryButtonDelegate
 extension FMPrimaryButtonTest: FMPrimaryButtonDelegate {
-    func handleButtonTapped() { /*Is not nescessary*/  }
+    func handleButtonTapped(_ loader: FMPrimaryButtonHideDelagate) {
+        /*Is not nescessary*/
+    }
 }

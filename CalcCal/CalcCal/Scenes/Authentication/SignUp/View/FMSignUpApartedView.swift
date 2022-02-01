@@ -49,14 +49,16 @@ final class FMSignUpApartedView: FMApartedBaseView {
     )
     
     lazy var VFieldsStackView: UIStackView = {
-        let stack = UIStackView(arrangedSubviews: [HNameStack, emailTF, passwordTF, signUpButton])
+        let stack = UIStackView(
+            arrangedSubviews: [HNameStack, emailTF, passwordTF, signUpButton]
+        )
         stack.axis = .vertical
         stack.spacing = 20
         stack.translatesAutoresizingMaskIntoConstraints = false
         return stack
     }()
     
-    lazy var signUpButton: FMPrimaryButton = .init(controllerDelegate, btnTitle: "Logar")
+    lazy var signUpButton: FMPrimaryButton = .init(controllerDelegate, btnTitle: "Criar conta")
     
     lazy var loginLabel = FMMultipleTextStyleLabel(
         texts: [
@@ -83,7 +85,7 @@ final class FMSignUpApartedView: FMApartedBaseView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    //MARK: - ConfigureLayoutProtocol
+    //MARK: - FMConfigureLayoutProtocol
     
     override func configureViewHierarchy() {
         super.configureViewHierarchy()

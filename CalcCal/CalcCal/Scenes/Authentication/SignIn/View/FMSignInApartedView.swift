@@ -67,23 +67,19 @@ final class FMSignInApartedView: FMSignInApartedViewProtocol {
     lazy var signInButton: FMPrimaryButton = .init(controllerDelegate, btnTitle: "Logar", hasLoader: true)
     
     lazy var registerLabel: FMMultipleTextStyleLabel = {
-        let button = FMMultipleTextStyleLabel(
-            texts: [
-                ("Ainda nao possui uma conta? ", [
-                    .font: UIFont.systemFont(ofSize: 17),
-                    .foregroundColor: UIColor.black
-                ]),
-                ("Registre-se", [
-                    .font: UIFont.boldSystemFont(ofSize: 17),
-                    .foregroundColor: UIColor.red
-                ])
-            ]
-        )
         let tap = UITapGestureRecognizer(
-            target: self, action: #selector(doubleStringTextLabelHandleTapped)
+            target: self,
+            action: #selector(doubleStringTextLabelHandleTapped)
+        )
+        let button = FMMultipleTextStyleLabel(
+            texts: [("Ainda nao possui uma conta? ", [
+                        .font: UIFont.systemFont(ofSize: 17),
+                        .foregroundColor: UIColor.black]),
+                    ("Registre-se", [
+                        .font: UIFont.boldSystemFont(ofSize: 17),
+                        .foregroundColor: UIColor.red])]
         )
         button.addGestureRecognizer(tap)
-        
         return button
     }()
     

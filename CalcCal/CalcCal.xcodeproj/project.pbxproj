@@ -12,7 +12,7 @@
 		B112C83927A4589E00DA2B2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C83827A4589E00DA2B2B /* SceneDelegate.swift */; };
 		B112C84027A458A200DA2B2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B112C83F27A458A200DA2B2B /* Assets.xcassets */; };
 		B112C84327A458A200DA2B2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B112C84127A458A200DA2B2B /* LaunchScreen.storyboard */; };
-		B112C85327A459F700DA2B2B /* ConfigureLayoutProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C85227A459F700DA2B2B /* ConfigureLayoutProtocol.swift */; };
+		B112C85327A459F700DA2B2B /* FMConfigureLayoutProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C85227A459F700DA2B2B /* FMConfigureLayoutProtocol.swift */; };
 		B112C85927A4C6F300DA2B2B /* FMSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C85827A4C6F300DA2B2B /* FMSignInViewController.swift */; };
 		B112C85D27A4CF2E00DA2B2B /* FMPrimaryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C85C27A4CF2E00DA2B2B /* FMPrimaryTextField.swift */; };
 		B112C86027A4D4B100DA2B2B /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112C85F27A4D4B100DA2B2B /* UITextField+Extensions.swift */; };
@@ -47,6 +47,10 @@
 		B129983027A7305500DEB735 /* FMRemoteServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B129982F27A7305500DEB735 /* FMRemoteServiceManager.swift */; };
 		B129983327A77D5A00DEB735 /* FMSignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B129983227A77D5A00DEB735 /* FMSignUpViewModel.swift */; };
 		B129983727A77F7900DEB735 /* FMSignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B129983627A77F7900DEB735 /* FMSignInViewModel.swift */; };
+		B129983C27A803E500DEB735 /* FMOrchestradorTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B129983B27A803E500DEB735 /* FMOrchestradorTabViewController.swift */; };
+		B129983E27A8047B00DEB735 /* FMImageFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = B129983D27A8047B00DEB735 /* FMImageFormatters.swift */; };
+		B129984127A80AE500DEB735 /* FMCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B129984027A80AE500DEB735 /* FMCalculatorViewController.swift */; };
+		B129984427A80DB600DEB735 /* FMCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B129984327A80DB600DEB735 /* FMCalendarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +72,7 @@
 		B112C83F27A458A200DA2B2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B112C84227A458A200DA2B2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B112C84427A458A200DA2B2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B112C85227A459F700DA2B2B /* ConfigureLayoutProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureLayoutProtocol.swift; sourceTree = "<group>"; };
+		B112C85227A459F700DA2B2B /* FMConfigureLayoutProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMConfigureLayoutProtocol.swift; sourceTree = "<group>"; };
 		B112C85827A4C6F300DA2B2B /* FMSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMSignInViewController.swift; sourceTree = "<group>"; };
 		B112C85C27A4CF2E00DA2B2B /* FMPrimaryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMPrimaryTextField.swift; sourceTree = "<group>"; };
 		B112C85F27A4D4B100DA2B2B /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
@@ -104,6 +108,10 @@
 		B129982F27A7305500DEB735 /* FMRemoteServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMRemoteServiceManager.swift; sourceTree = "<group>"; };
 		B129983227A77D5A00DEB735 /* FMSignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMSignUpViewModel.swift; sourceTree = "<group>"; };
 		B129983627A77F7900DEB735 /* FMSignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMSignInViewModel.swift; sourceTree = "<group>"; };
+		B129983B27A803E500DEB735 /* FMOrchestradorTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMOrchestradorTabViewController.swift; sourceTree = "<group>"; };
+		B129983D27A8047B00DEB735 /* FMImageFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMImageFormatters.swift; sourceTree = "<group>"; };
+		B129984027A80AE500DEB735 /* FMCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMCalculatorViewController.swift; sourceTree = "<group>"; };
+		B129984327A80DB600DEB735 /* FMCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMCalendarViewController.swift; sourceTree = "<group>"; };
 		FD54ADAAD3AD215E6095DF87 /* Pods-CalcCal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalcCal.debug.xcconfig"; path = "Target Support Files/Pods-CalcCal/Pods-CalcCal.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -173,6 +181,9 @@
 		B112C84B27A458E000DA2B2B /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B129983B27A803E500DEB735 /* FMOrchestradorTabViewController.swift */,
+				B129984227A80DA600DEB735 /* Calendar */,
+				B129983F27A80ABA00DEB735 /* Calculator */,
 				B112C89127A61B4800DA2B2B /* Home */,
 				B112C84C27A4597500DA2B2B /* Authentication */,
 			);
@@ -211,7 +222,7 @@
 		B112C85A27A4CF1000DA2B2B /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				B112C85227A459F700DA2B2B /* ConfigureLayoutProtocol.swift */,
+				B112C85227A459F700DA2B2B /* FMConfigureLayoutProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -244,6 +255,7 @@
 			children = (
 				B112C86227A4E4A000DA2B2B /* FMValidators.swift */,
 				B112C89A27A6299400DA2B2B /* FMTextStylesFormatters.swift */,
+				B129983D27A8047B00DEB735 /* FMImageFormatters.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -398,6 +410,22 @@
 				B112C88B27A5A1B400DA2B2B /* FMSignInApartedView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B129983F27A80ABA00DEB735 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				B129984027A80AE500DEB735 /* FMCalculatorViewController.swift */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		B129984227A80DA600DEB735 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				B129984327A80DB600DEB735 /* FMCalendarViewController.swift */,
+			);
+			path = Calendar;
 			sourceTree = "<group>";
 		};
 		B8D9CEABE68DFBE8A1CBE26D /* Pods */ = {
@@ -575,16 +603,20 @@
 				B112C83727A4589E00DA2B2B /* AppDelegate.swift in Sources */,
 				B129982527A709EF00DEB735 /* RotationAnimation.swift in Sources */,
 				B112C85D27A4CF2E00DA2B2B /* FMPrimaryTextField.swift in Sources */,
+				B129983C27A803E500DEB735 /* FMOrchestradorTabViewController.swift in Sources */,
+				B129984127A80AE500DEB735 /* FMCalculatorViewController.swift in Sources */,
 				B112C89627A6254800DA2B2B /* FMSignUpViewController.swift in Sources */,
 				B112C86727A4F3D900DA2B2B /* FMPrimaryButton.swift in Sources */,
 				B112C89D27A62CBB00DA2B2B /* FMBaseViewController.swift in Sources */,
 				B129981F27A7052300DEB735 /* StrokeAnimation.swift in Sources */,
+				B129983E27A8047B00DEB735 /* FMImageFormatters.swift in Sources */,
 				B112C89B27A6299400DA2B2B /* FMTextStylesFormatters.swift in Sources */,
 				B129983027A7305500DEB735 /* FMRemoteServiceManager.swift in Sources */,
 				B129983327A77D5A00DEB735 /* FMSignUpViewModel.swift in Sources */,
 				B112C86527A4E4FA00DA2B2B /* String+Extensions.swift in Sources */,
 				B112C86027A4D4B100DA2B2B /* UITextField+Extensions.swift in Sources */,
-				B112C85327A459F700DA2B2B /* ConfigureLayoutProtocol.swift in Sources */,
+				B129984427A80DB600DEB735 /* FMCalendarViewController.swift in Sources */,
+				B112C85327A459F700DA2B2B /* FMConfigureLayoutProtocol.swift in Sources */,
 				B112C83927A4589E00DA2B2B /* SceneDelegate.swift in Sources */,
 				B129982C27A72FBE00DEB735 /* FMServiceManager.swift in Sources */,
 				B129981B27A7028300DEB735 /* ProgressView.swift in Sources */,

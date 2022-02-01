@@ -1,5 +1,5 @@
 //
-//  ConfigureLayoutProtocol.swift
+//  FMConfigureLayoutProtocol.swift
 //  CalcCal
 //
 //  Created by Paolo Prodossimo Lopes on 28/01/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol ConfigureLayoutProtocol {
+protocol FMConfigureLayoutProtocol {
     func commonInit()
     func configureViewHierarchy()
     func configureConstraints()
@@ -15,7 +15,7 @@ protocol ConfigureLayoutProtocol {
 }
 
 //MARK: - Default implementation
-extension ConfigureLayoutProtocol {
+extension FMConfigureLayoutProtocol {
     func commonInit() {
         configureViewHierarchy()
         configureConstraints()

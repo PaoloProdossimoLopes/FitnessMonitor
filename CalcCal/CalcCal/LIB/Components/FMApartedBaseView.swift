@@ -8,7 +8,7 @@
 import UIKit
 
 typealias FMApartedBaseViewProtocol = (
-    UIView & ConfigureLayoutProtocol
+    UIView & FMConfigureLayoutProtocol
 )
 
 class FMApartedBaseView: FMApartedBaseViewProtocol {

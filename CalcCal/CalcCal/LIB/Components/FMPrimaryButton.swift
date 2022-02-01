@@ -8,7 +8,7 @@
 import UIKit
 
 typealias FMPrimaryButtonProtocol = (
-    UIButton & ConfigureLayoutProtocol
+    UIButton & FMConfigureLayoutProtocol
 )
 
 protocol FMPrimaryButtonHideDelagate: AnyObject {
@@ -57,7 +57,7 @@ final class FMPrimaryButton: FMPrimaryButtonProtocol {
         fatalError("init(coder:) has not been implemented")
     }
     
-    //MARK: - ConfigureLayoutProtocol
+    //MARK: - FMConfigureLayoutProtocol
     
     func configureViewHierarchy() { /*Is not nescessary*/ }
     

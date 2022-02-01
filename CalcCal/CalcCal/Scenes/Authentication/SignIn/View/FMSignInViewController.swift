@@ -13,7 +13,7 @@ typealias FMSignInViewControllerProtocol = (FMBaseViewController)
 final class FMSignInViewController: FMSignInViewControllerProtocol {
     
     //MARK: - Properties
-    private(set) lazy var FMApartedView: FMSignInApartedView = .init(self)
+    lazy var FMApartedView: FMSignInApartedView = .init(self)
     private let viewModel: FMSignInViewModelProtocol
     
     //MARK: - Constructor
@@ -33,12 +33,17 @@ final class FMSignInViewController: FMSignInViewControllerProtocol {
         view = FMApartedView
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        checkLocalDataBase()
+    }
+    
     //MARK: - Helpers
     
     private func goToHome() {
-        let controller = FMHomeViewController()
-        controller.modalPresentationStyle = .fullScreen
-        self.present(controller, animated: true, completion: nil)
+        let nav = FMOrchestradorTabViewController()
+        nav.modalPresentationStyle = .fullScreen
+        self.present(nav, animated: true, completion: nil)
     }
     
     private func loginButtonHandleTapped(_ loader: FMPrimaryButtonHideDelagate) {
@@ -60,6 +65,13 @@ final class FMSignInViewController: FMSignInViewControllerProtocol {
     private func goToSignUp() {
         let controller = FMSignUpViewController()
         self.navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    private func checkLocalDataBase() {
+        let (email, password) = viewModel.getLocalCurrentLogin()
+        FMApartedView.emailTF.mainTextField.text = email
+        FMApartedView.passwordTF.mainTextField.text = password
+        validateButton()
     }
 }
 
